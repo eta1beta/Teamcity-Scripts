@@ -1,6 +1,6 @@
 import-module webadministration
 
-## REMOVE WEB APPLICATION AND APPLICATION POOL
+### REMOVE WEB APPLICATION AND APPLICATION POOL
 
 $ROOT_DIRECTORY = "C:\inetpub\teamcity-branch"
 
