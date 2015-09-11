@@ -38,6 +38,6 @@ foreach ($app in $apps) {
 }
 
 # Cancella AppPool con il nome del branch
-Remove-WebAppPool -Name $appPool `
+Remove-WebAppPool -Name age-$appPool `
                   -Verbose `
                   -ErrorAction Ignore
