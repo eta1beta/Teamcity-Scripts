@@ -8,7 +8,7 @@ $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')
 
 $site = "Default Web site\tc-branch\$normalizedBranchName"
-$appPool = "$normalizedBranchName"
+$appPool = "age-$normalizedBranchName"
 
 $apps = @(
     "Admissions",
@@ -38,6 +38,6 @@ foreach ($app in $apps) {
 }
 
 # Cancella AppPool con il nome del branch
-Remove-WebAppPool -Name age-$appPool `
+Remove-WebAppPool -Name $appPool `
                   -Verbose `
                   -ErrorAction Ignore

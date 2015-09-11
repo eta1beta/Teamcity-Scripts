@@ -6,7 +6,7 @@ $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')
 
 $site = "Default Web site\tc-branch\$normalizedBranchName"
-$appPool = "$normalizedBranchName"
+$appPool = "age-$normalizedBranchName"
 $installationPath = "$ROOT_DIRECTORY\$normalizedBranchName"
 
 $apps = @(
