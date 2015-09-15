@@ -1,7 +1,17 @@
 $ROOT_DIRECTORY = "C:\inetpub\quicksupport-branch"
 
+function Trim-Length {
+param (
+    [parameter(Mandatory=$True,ValueFromPipeline=$True)] [string] $Str
+  , [parameter(Mandatory=$True,Position=1)] [int] $Length
+)
+    $Str[0..($Length-1)] -join ""
+}
+
+
 $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')
+$normalizedBranchName = $normalizedBranchName | Trim-Length 60
 
 $installationPath = "$ROOT_DIRECTORY\$normalizedBranchName"
 
