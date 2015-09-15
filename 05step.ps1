@@ -1,4 +1,4 @@
-$ROOT_DIRECTORY = "C:\inetpub\teamcity-branch"
+$ROOT_DIRECTORY = "C:\inetpub\agenda-branch"
 
 $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')

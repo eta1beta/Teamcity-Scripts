@@ -1,13 +1,11 @@
 import-module webadministration
 
-### REMOVE WEB APPLICATION AND APPLICATION POOL
-
-$ROOT_DIRECTORY = "C:\inetpub\teamcity-branch"
+$ROOT_DIRECTORY = "C:\inetpub\agenda-branch"
 
 $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')
 
-$site = "Default Web site\tc-branch\$normalizedBranchName"
+$site = "Default Web site\age-branch\$normalizedBranchName"
 $appPool = "age-$normalizedBranchName"
 
 $apps = @(
