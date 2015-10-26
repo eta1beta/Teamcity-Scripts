@@ -34,17 +34,15 @@ $apps = @(
     "Reports",
     "ResetPasswordAPI",
     "ResetPassword",
-    "ValidatorFields"
+    "ValidatorFields",
+	"Appointments.API",
+	"Calendars​"
 )
 
 # Cancella tutte le application
 foreach ($app in $apps) {
-    Remove-WebApplication -Name $app -Site $site `
-                          -Verbose `
-                          -ErrorAction Ignore
+    Remove-WebApplication -Name $app -Site $site -Verbose -ErrorAction Ignore
 }
 
 # Cancella AppPool con il nome del branch
-Remove-WebAppPool -Name $appPool `
-                  -Verbose `
-                  -ErrorAction Ignore
+Remove-WebAppPool -Name $appPool -Verbose -ErrorAction Ignore

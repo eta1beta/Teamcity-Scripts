@@ -35,7 +35,9 @@ $apps = @(
     "Reports",
     "ResetPasswordAPI",
     "ResetPassword",
-    "ValidatorFields"
+    "ValidatorFields",
+	"Appointments.API",
+	"Calendars​"
 )
 
 # Crea AppPool con il nome del branch
@@ -43,8 +45,8 @@ New-WebAppPool -Name $appPool `
                -Force `
                -Verbose
 Set-ItemProperty IIS:\AppPools\$appPool `
-                 managedRuntimeVersion "v4.0" `
-                 -Verbose
+                  managedRuntimeVersion "v4.0" `
+                  -Verbose
 Set-ItemProperty IIS:\AppPools\$appPool `
                 -Name "enable32BitAppOnWin64" `
                 -Value "true" `
