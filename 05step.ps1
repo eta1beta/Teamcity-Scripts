@@ -32,8 +32,8 @@ $apps = @{
     "ResetPassword.API\ResetPassword.API.csproj"        = "ResetPasswordAPI";
     "ResetPassword.Web\ResetPassword.Web.csproj"        = "ResetPassword";
     "ValidatorFields\ValidatorFields.csproj"            = "ValidatorFields";
-	"​Appointments.API\​Appointments.API.csproj"          = "​Appointments.API";
-	"Calendars​\Calendars​.csproj"            			= "Calendars​";
+    "​Appointments.API\​Appointments.API.csproj"          = "​Appointments.API";
+    "Calendars​\Calendars​.csproj"                        = "Calendars​";
 }
 
 foreach ($app in $apps.GetEnumerator()) {
