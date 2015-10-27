@@ -35,8 +35,8 @@ $apps = @(
     "ResetPasswordAPI",
     "ResetPassword",
     "ValidatorFields",
-	"Appointments.API",
-	"Calendars​"
+    "Appointments.API",
+    "Calendars"
 )
 
 # Cancella tutte le application

@@ -36,8 +36,8 @@ $apps = @(
     "ResetPasswordAPI",
     "ResetPassword",
     "ValidatorFields",
-	"Appointments.API",
-	"Calendars​"
+    "Appointments.API",
+    "Calendars"
 )
 
 # Crea AppPool con il nome del branch
