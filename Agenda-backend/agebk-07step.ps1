@@ -8,18 +8,18 @@ param (
     $Str[0..($Length-1)] -join ""
 }
 
-$ROOT_DIRECTORY = "C:\inetpub\quicksupport-branch"
+$ROOT_DIRECTORY = "C:\inetpub\agendabackend-branch"
 
 $branchName = "%teamcity.build.branch%"
 $normalizedBranchName = $branchName.replace('/', '-')
 $normalizedBranchName = $normalizedBranchName | Trim-Length 60
 
-$site = "Default Web site\sup-branch\$normalizedBranchName"
+$site = "Default Web site\agebe-branch\$normalizedBranchName"
 $appPool = "sup-$normalizedBranchName"
 $installationPath = "$ROOT_DIRECTORY\$normalizedBranchName"
 
 $apps = @(
-    "QuickSupport"
+    "AgendaBackend"
 )
 
 # Crea AppPool con il nome del branch

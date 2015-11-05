@@ -1,4 +1,4 @@
-$ROOT_DIRECTORY = "C:\inetpub\quicksupport-branch"
+$ROOT_DIRECTORY = "C:\inetpub\agendabackend-branch"
 
 function Trim-Length {
 param (
@@ -16,7 +16,7 @@ $normalizedBranchName = $normalizedBranchName | Trim-Length 60
 $installationPath = "$ROOT_DIRECTORY\$normalizedBranchName"
 
 $apps = @{
-    "QuickSupport\QuickSupport.csproj" = "QuickSupport";
+    "AgendaBackend\AgendaBackend.csproj" = "AgendaBackend";
 }
 
 foreach ($app in $apps.GetEnumerator()) {
