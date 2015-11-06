@@ -15,7 +15,7 @@ $normalizedBranchName = $branchName.replace('/', '-')
 $normalizedBranchName = $normalizedBranchName | Trim-Length 60
 
 $site = "Default Web site\agebe-branch\$normalizedBranchName"
-$appPool = "sup-$normalizedBranchName"
+$appPool = "agebe-$normalizedBranchName"
 $installationPath = "$ROOT_DIRECTORY\$normalizedBranchName"
 
 $apps = @(
