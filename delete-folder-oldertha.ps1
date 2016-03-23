@@ -1,5 +1,5 @@
 ﻿$Now = Get-Date
-$Days = "9"
+$Days = "8"
 $TargetFolder = "C:\inetpub\teamcity-branch"
 $LastWrite = $Now.AddDays(-$Days)
 
